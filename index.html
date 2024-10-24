@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrzPoint-Car Dealership</title>
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- navbar -->
+     <header>
+        <!-- marquee text -->
+     <marquee behavior="scroll" direction="left" scrollamount="5">
+        Enjoy competitive prices and fast shipping on all orders.
+        <span style="padding-left: 100px;">use code:MRZ2024 for 80% discount on your first sale</span>
+        <span style="padding-left: 100px;">Join our community of satisfied drivers today!</span>
+        <span style="padding-left: 100px;">We source only the best brands to ensure top-notch quality.</span>
+    </marquee>
+        <!-- nav container -->
+         <div class="nav container">
+            <!-- menu icon -->
+            <i class='bx bx-menu' id="menu icon"></i>
+            <!-- signup and login buttons -->
+            <button class="btn1" id="signup-btn">Sign Up</button>
+            <button class="btn1" id="login-btn">Login</button>
+            <!-- logo -->
+             <a href="#" class="logo">Mrz<span>Cars</span></a>
+             <!-- nav list -->
+              <ul class="navbar">
+                  <li><a href="#home" class="active">Home</a></li>
+                  <li><a href="#cars">Cars</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#parts">Parts</a></li>
+                  <li><a href="#blog">Blog</a></li>
+            </ul>
+            <!-- search icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- search box -->
+             <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here">
+             </div>
+         </div>
+         
+     </header>
+    
+     <!-- Signup Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeSignupModal()">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" id="signupEmail" placeholder="Email" required><br>
+            <input type="password" id="signupPassword" placeholder="Password" required><br>
+            <button type="submit" class="sign">Create Account</button><br>
+            
+            
+        </form>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn"  onclick="closeLoginModal()" >&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit" class="login">Login</button>
+        </form>
+    </div>
+</div>
+     <!-- home -->
+      <section class="home" id="home">
+        <div class="home-text">
+            <h1>We have everything <br>Your <span>Car</span>Need </h1>
+            <p>We provide everything your car needs,<br> from maintenance services to quality parts and accessories.</p>
+            <!-- home button -->
+            <a href="#cars" class="btn">Discover now</a>
+
+        </div>
+      </section>
+      <!-- cars section -->
+       <section class="cars" id="cars">
+        <div class="heading">
+            <span>All cars</span>
+            <h2>We have all type of cars</h2>
+            <p>We offer a wide variety of cars to suit every driver's needs and preferences.</p>
+        </div>
+        <div class="cars-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <a href="https://www.porsche.com/middle-east/_india_/" target="_blank"><img src="car1.jpg" alt="image not found" ></a>
+                
+                <h2>Sports</h2>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <a href="https://www.ford.com/" target="_blank"><img src="ford.jpg" alt="image not found"></a>
+                
+                <h2>Family</h2>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <a href="https://www.bmw.com/en/index.html" target="_blank"><img src="bmw.jpg" alt="image not found"></a>
+                
+                <h2>Drag</h2>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <a href="https://www.toyotabharat.com/showroom/hilux/" target="_blank"><img src="hilux.jpg" alt="image not found"></a>
+                
+                <h2>Truck</h2>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <a href="https://www.lexus.com/" target="_blank"><img src="lexus.jpg" alt="image not found"></a>
+                
+                <h2>Sedan</h2>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <a href="https://en.allnewpatrol.nissanqatar.com/" target="_blank"><img src="nissan.jpg" alt="image not found"></a>
+                
+                <h2>SUV</h2>
+            </div>
+        </div>
+       </section>
+       <!-- about -->
+        <section class="about container" id="about">
+            <div class="about-img">
+                <img src="about.png" alt="non">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <h2>Cheap prices with <br> Quality cars</h2>
+                <p>Discover affordable prices without compromising quality; find the perfect car that meets your needs today.</p>
+                <!-- about button -->
+                 <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- parts section -->
+         <section class="parts" id="parts">
+            <div class="heading">
+                <span>What we Offer</span>
+                <h2>Our cars are always excellent</h2>
+                <p>Our cars consistently offer exceptional quality and performance for every driver.</p>
+            </div>
+            <!-- parts container -->
+             <div class="parts-container container">
+                <!-- Box 1 -->
+                <div class="box">
+                    <img src="part1.png" alt="">
+                    <h3>Engine</h3>
+                    <span>$2230</span>
+                    <i class='bx bxs-star' >(6 Reviews)</i>
+                    <a href="https://www.google.com/search?sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&sxsrf=ADLYWILCy5N-Y0uILSjjrnIII0mlt7-hWg:1729154189300&q=car+engine&tbm=shop&source=lnms&fbs=AEQNm0AeMNWKf4PpcKMI-eSa16lJoRPMIuyspCxWO6iZW9F1Ns6EVsgc0W_0xN47PHaanAEtg26fpfc9gg2y1-ZsywNNidIzOA0khSyMN51n7r3LlDC9M1NYStuTRDcBUYQ58dKt-Q6SigUS4Yne5yDHLg0vPBr98Nz98twIaNcnWiKaD4QuEh93Q53sB-UkWP9OcfO5KeatY98HR7cDW9ZTjFpZV7kJtA&ved=1t:200715&ictx=111&biw=1536&bih=695&dpr=1.25" class="btn" target="_blank">Buy Now</a>
+                    <a href="https://www.spinny.com/blog/index.php/types-of-car-engines/" class="details" target="_blank" >View Details</a>
+                </div>
+                <!-- Box 2 -->
+                <div class="box">
+                    <img src="part2.png" alt="">
+                    <h3>Car Piston</h3>
+                    <span>$420</span>
+                    <i class='bx bxs-star' >(5 Reviews)</i>
+                    <a href="https://www.google.com/search?q=car+piston&sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&biw=1536&bih=695&tbm=shop&sxsrf=ADLYWIJsthM00k-Z7f_W4o2DYmrRmigEfg%3A1729154282652&ei=6swQZ4GWJ5W9vr0PksiT2QE&ved=0ahUKEwiBs53WgZWJAxWVnq8BHRLkJBsQ4dUDCAg&uact=5&oq=car+piston&gs_lp=Egtwcm9kdWN0cy1jYyIKY2FyIHBpc3RvbjIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJ0wUIEYWJMscAF4AJABAJgB8QGgAfIOqgEFMC42LjS4AQPIAQD4AQGYAgugAvEPqAIBwgIHECMYJxjqAsICChAAGIAEGEMYigXCAgQQIxgnmAMHkgcFMS42LjSgB_k4&sclient=products-cc" target="_blank" class="btn">Buy Now</a>
+                    <a href="https://caradvise.com/simple-guide-to-engine-pistons/" class="details" target="_blank" >View Details</a>
+                </div>
+                <!-- Box 3 -->
+                <div class="box">
+                    <img src="part3.png" alt="">
+                    <h3>Auto spare parts</h3>
+                    <span>$100 - $400</span>
+                    <i class='bx bxs-star' >(6 Reviews)</i>
+                    <a href="https://www.google.com/search?q=autospare+parts&sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&biw=1536&bih=695&tbm=shop&sxsrf=ADLYWIJnx-l1581E6r7pbw7eqrCCuQciZQ%3A1729154296470&ei=-MwQZ_yNHIi2vr0PnJr1qAM&ved=0ahUKEwj86ejcgZWJAxUIm68BHRxNHTUQ4dUDCAg&uact=5&oq=autospare+parts&gs_lp=Egtwcm9kdWN0cy1jYyIPYXV0b3NwYXJlIHBhcnRzMgcQABiABBgNMgcQABiABBgNMgcQABiABBgNMgcQABiABBgNMgoQABiABBjWBRgNMgoQABiABBjWBRgNMgoQABiABBjWBRgNMgoQABiABBjWBRgNMgoQABiABBjWBRgNMgoQABiABBjWBRgNSNEhUKsFWLEfcAF4AJABAJgB2gGgAfwUqgEGMC4xMi4zuAEDyAEA-AEBmAIQoAKIFqgCAsICBxAjGCcY6gLCAgoQABiABBhDGIoFwgIFEAAYgATCAgcQABiABBgKwgIIEAAYBRgKGB7CAgQQABgemAMHkgcGMS4xMC41oAf1Sg&sclient=products-cc" target="_blank" class="btn">Buy Now</a>
+                    <a href="https://www.krishnaautoelectric.com/blog/what-are-automobile-spare-parts-and-how-can-they-be-used/" class="details" target="_blank" >View Details</a>
+                </div>
+                <!-- Box 4 -->
+                <div class="box">
+                    <img src="part4.png" alt="">
+                    <h3>Oil filters</h3>
+                    <span>$55</span>
+                    <i class='bx bxs-star' >(7 Reviews)</i>
+                    <a href="https://www.google.com/search?q=oil+filters&sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&biw=1536&bih=695&tbm=shop&sxsrf=ADLYWILD8VJyGv_-idSqoWTAwkOo-D6E4Q%3A1729154328376&ei=GM0QZ9esFumNvr0P-ZKYyQU&ved=0ahUKEwjXmITsgZWJAxXphq8BHXkJJlkQ4dUDCAg&uact=5&oq=oil+filters&gs_lp=Egtwcm9kdWN0cy1jYyILb2lsIGZpbHRlcnMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSJQbUMIEWNEZcAF4AJABAJgB5gKgAbsTqgEIMC4xMS4xLjG4AQPIAQD4AQGYAg6gAtwUqAIDwgIHECMYJxjqAsICBxAAGIAEGAqYA64BkgcIMS4xMC4yLjGgB5Q-&sclient=products-cc" target="_blank" class="btn">Buy Now</a>
+                    <a href="https://testbook.com/mechanical-engineering/types-of-oil-filters" class="details" target="_blank" >View Details</a>
+                </div>
+                <!-- Box 5 -->
+                <div class="box">
+                    <img src="part5.png" alt="">
+                    <h3>Alternator</h3>
+                    <span>$260</span>
+                    <i class='bx bxs-star' >(6 Reviews)</i>
+                    <a href="https://www.google.com/search?q=alternator&sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&biw=1536&bih=695&tbm=shop&sxsrf=ADLYWILsXx6cmRHlH6gP801ZHMfnzIlZdQ%3A1729154362299&ei=Os0QZ7rcEaWS1e8PuJbcqQQ&ved=0ahUKEwi64Zr8gZWJAxUlSfUHHTgLN0UQ4dUDCAg&uact=5&oq=alternator&gs_lp=Egtwcm9kdWN0cy1jYyIKYWx0ZXJuYXRvcjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI6RFQ4wNY_xBwAXgAkAEAmAG9AaABgQyqAQMwLjm4AQPIAQD4AQGYAgqgAukMqAIDwgIHECMYJxjqAsICChAAGIAEGEMYigWYAwuSBwMxLjmgB44q&sclient=products-cc" target="_blank" class="btn">Buy Now</a>
+                    <a href="https://www.autoelectro.co.uk/alternators" target="_blank"  class="details">View Details</a>
+                </div>
+                <!-- Box 6 -->
+                <div class="box">
+                    <img src="part6.png" alt="">
+                    <h3>Tyres</h3>
+                    <span>$99</span>
+                    <i class='bx bxs-star' >(5 Reviews)</i>
+                    <a href="https://www.google.com/search?q=tyres&sca_esv=0162a739e8c9f12e&rlz=1C1GCEA_enIN1129IN1131&biw=1536&bih=695&tbm=shop&sxsrf=ADLYWIIbjZ9G8ymGR6w3XkZC4rWz8kmqeg%3A1729154415505&ei=b80QZ8qlHpm4vr0P-J-qkAs&ved=0ahUKEwiKmcqVgpWJAxUZnK8BHfiPCrIQ4dUDCAg&uact=5&oq=tyres&gs_lp=Egtwcm9kdWN0cy1jYyIFdHlyZXMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKURUNQEWLYMcAF4AJABAJgBwwGgAeQGqgEDMC41uAEDyAEA-AEBmAIGoAKiB6gCBcICBxAjGCcY6gLCAgoQABiABBhDGIoFmAMJkgcFMS40LjGgB-UW&sclient=products-cc" target="_blank" class="btn">Buy Now</a>
+                    <a href="https://blog.nationwide.com/vehicle/what-is-an-alternator/" class="details" target="_blank" >View Details</a>
+                </div>
+             </div>
+         </section>
+         <!-- blog section -->
+          <section class="blog" id="blog">
+            <div class="heading">
+                <span>Our Blog</span>
+                <h2>Our Blog Content</h2>
+                <p>"Join our car lovers' blog, where owners share insights, driving stories, and the latest auto trends."</p>
+            </div>
+            <div class="blog-container container">
+                <!-- Box 1 -->
+                 <div class="box">
+                    <img src="car1.jpg" alt="">
+                    <span>16 October 2024</span>
+                    <h3>How to get perfect car at low cost</h3>
+                    <p>"Learn the best strategies for buying a quality car at a low cost and save big."</p>
+                    <a href="https://carjoz.com/guidelines-for-beginners-on-how-to-purchase-a-budget-low-car/" target="_blank" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+                 </div>
+                  <!-- Box 2 -->
+                  <div class="box">
+                    <img src="hilux.jpg" alt="">
+                    <span>6 October 2024</span>
+                    <h3>What features do you look for when shopping for a new car?</h3>
+                    <p>We consider reliability, comfort, and advanced safety features as key factors in their car choice.</p>
+                    <a href="https://gomechanic.in/blog/things-to-help-you-buy-a-new-car/" target="_blank" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+                 </div>
+                  <!-- Box 3 -->
+                  <div class="box">
+                    <img src="car5.jpg" alt="">
+                    <span>14 October 2024</span>
+                    <h3>Smart Strategies for Navigating Car Dealerships Like a Pro</h3>
+                    <p>"Learn effective negotiation techniques to secure the best deals at car dealerships like a pro..."</p>
+                    <a href="https://www.npr.org/2019/10/31/774757867/5-tips-for-buying-a-car-the-smart-way" target="_blank" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+                 </div>
+            </div>
+          </section>
+          <!-- Footer -->
+           <section class="footer">
+            <div class="footer-container container">
+                <div class="footer-box">
+                    <a href="#" class="logo">Mrz<span>Cars</span></a>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                    
+                </div>
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="#home">Home</a>
+                    <a href="#cars">Cars</a>
+                    <a href="#parts">Parts</a>
+                    <a href="#blog">Sales</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Germany</p>
+    
+                </div>
+            </div>
+            
+           </section>
+           <!-- copyright -->
+            <div class="copyright">
+                <p>&#169; Marzooq all rights reserved</p>
+            </div>
+     <!-- link to JS -->
+      <script src="main.js"></script>
+    
+</body>
+</html>
